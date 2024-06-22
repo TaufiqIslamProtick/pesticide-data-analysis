@@ -1,5 +1,3 @@
-Sure! Here's an improved version of your README with correct capitalization, URL usage, and some additional formatting for clarity:
-
 # Pesticide Data Analysis
 
 In this project, I explored analyzed one pesticide dataset, Pesticide Use.
