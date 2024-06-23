@@ -7,7 +7,7 @@ In this project, I explored analyzed one pesticide dataset, Pesticide Use.
 - [x] Read the dataset, name: pesticides use
 - [x] Specify the unit that you are working with: g/Int$
 - [X] Descriptive statistics: continent-wise
-- [ ] Trend Analysis: continent-wise
+- [X] Trend Analysis: continent-wise
 - [ ] Prediction of the unit using time-series modeling.
 - [ ] Comparative analysis using ANOVA
 - [ ] Cluster analysis
