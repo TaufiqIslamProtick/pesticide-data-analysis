@@ -26,7 +26,8 @@ file_base_name <- file_path_sans_ext(basename(csv_file))
 param_name <- file_base_name  # You can change this if you have a different column
 
 # Create the output PDF file name by appending the base name
-pdf_file <- paste0(file_base_name, "_acf_pacf_plots.pdf")
+#pdf_file <- paste0(file_base_name, "_acf_pacf_plots.pdf")
+pdf_file <- file.path(args[2], paste0(file_base_name, ".pdf"))
 
 # Open PDF device to save both plots
 pdf(pdf_file, width = 12, height = 6)
