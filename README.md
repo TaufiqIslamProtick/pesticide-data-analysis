@@ -1,44 +1,38 @@
 # Time Series Forecasting Using ARIMA Model
 
-This project focuses on building an ARIMA model to forecast future values based on historical time series data. The project includes data preprocessing, model selection, evaluation, and visualization of results.
-
 ## Table of Contents
-- [Project Overview](#project-overview)
+- [Overview](#overview)
 - [Dataset](#dataset)
-- [Technologies Used](#technologies-used)
+- [Technologies](#technologies)
 - [Methodology](#methodology)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
 - [Report](#report)
-- [License](#license)
 
-## Project Overview
-This project demonstrates the use of the ARIMA (AutoRegressive Integrated Moving Average) model for time series forecasting. The project aims to predict future values based on patterns identified in historical data. Key components include data preprocessing, model parameter selection, evaluation, and visualization of the forecasted results.
+## Overview
+This project uses the ARIMA model for time series forecasting, aiming to predict future values based on historical data patterns. It includes data preprocessing, model selection, evaluation, and forecast visualization.
 
 ## Dataset
-- **Source**: [Link to dataset source]
-- **Description**: The dataset contains [X years/months/days] of data on [describe what the data represents, e.g., daily sales, stock prices, weather data].
+- **Source**: FAO pesticide dataset
+- **Details**: The analysis focuses on the **g/Int$** value for seven regions over 32 years (1990–2021).
 
-## Technologies Used
+## Technologies
 - Python
 - pandas
 - statsmodels
 - matplotlib
-- seaborn
 - Jupyter Notebook
 
 ## Methodology
-1. **Data Preprocessing**: 
-   - Handling missing values and outliers.
-   - Converting the data to a stationary time series using differencing and transformations.
-2. **ARIMA Modeling**: 
-   - Identifying optimal parameters (`p`, `d`, `q`) using ACF/PACF plots.
-   - Model fitting and fine-tuning.
-3. **Evaluation**: 
-   - Forecast accuracy measured using RMSE, MAE.
-4. **Visualization**: 
-   - Time series plot of actual vs forecasted values.
+1. **Preprocessing**: Filtered data to g/Int$ values for seven regions (Africa, Asia, Central America, Europe, Northern America, Oceania, South America).
+2. **ARIMA Model**:
+   - Performed ADF test (alpha = 0.1).
+   - Differenced non-stationary time series.
+   - Selected `p`, `d`, `q` parameters using ACF/PACF plots.
+   - Forecasted future data points.
+3. **Evaluation**: Measured accuracy using RMSE.
+4. **Visualization**: Plotted actual vs. forecasted values.
 
 ## Installation
 1. Clone the repository:
@@ -46,34 +40,31 @@ This project demonstrates the use of the ARIMA (AutoRegressive Integrated Moving
    git clone https://github.com/yourusername/ARIMA-forecasting.git
    cd ARIMA-forecasting
    ```
-2. Install the required libraries:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
 ## Usage
-1. Open the Jupyter Notebook:
+1. Launch the notebook:
    ```bash
    jupyter notebook arima_forecasting.ipynb
    ```
-2. Run each cell to reproduce the analysis and results.
+2. Run all cells for analysis and results.
 
 ## Results
-- The ARIMA model achieved an RMSE of **X** on the test dataset.
-- Forecasted values show a **Y% improvement** compared to a baseline naive model.
+- RMSE on the test dataset: **X**.
+- Forecasted values show a **Y% improvement** over the naive baseline.
 
 ## Report
 ### Introduction
-This project explores the application of the ARIMA model for time series forecasting. The objective is to predict future values based on past observations in the dataset.
+The goal is to forecast g/Int$ pesticide use across seven regions using ARIMA, achieving an RMSE of **X**.
 
 ### Methodology Summary
-- After performing Exploratory Data Analysis (EDA) and ensuring the time series is stationary, the ARIMA model was applied. Parameters were tuned using grid search, and the model’s performance was evaluated against test data.
+- ADF test confirmed stationarity. Differencing was applied for non-stationary series, with `p` and `q` selected based on ACF/PACF plots. The model was evaluated on test data.
 
 ### Results
-The model effectively captured the trends and seasonality in the dataset, with an RMSE of **X**. Key insights included identifying seasonal patterns and long-term trends.
+The model captured key trends and seasonal patterns, achieving an RMSE of **X**.
 
 ### Conclusion
-The ARIMA model provides a robust approach to forecasting time series data with moderate complexity. Further tuning and exploration of more advanced models like SARIMA may enhance accuracy.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+ARIMA provides a reliable forecasting method, with potential for improvement through advanced models like SARIMA.
