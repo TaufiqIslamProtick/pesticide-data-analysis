@@ -1,5 +1,12 @@
-*/
 Input/
 .ipynb_checkpoints/
 notepad.txt
-
+script.R
+ACF_PACF/
+ACF_PACF_AFTER_D/
+ACF_PACF_DIFF/
+ACFPACF_DIFF2/
+Output/
+Output_after_d/
+Output_diff/
+Output_diff2/
