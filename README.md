@@ -37,8 +37,8 @@ This project uses the ARIMA model for time series forecasting, aiming to predict
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ARIMA-forecasting.git
-   cd ARIMA-forecasting
+   git clone https://github.com/TaufiqIslamProtick/pesticide-data-analysis.git
+   cd pesticide-data-analysis
    ```
 2. Install dependencies:
    ```bash
@@ -48,23 +48,22 @@ This project uses the ARIMA model for time series forecasting, aiming to predict
 ## Usage
 1. Launch the notebook:
    ```bash
-   jupyter notebook arima_forecasting.ipynb
+   jupyter notebook source.ipynb
    ```
 2. Run all cells for analysis and results.
 
 ## Results
-- RMSE on the test dataset: **X**.
-- Forecasted values show a **Y% improvement** over the naive baseline.
+- RMSE on the test dataset: 0.072
 
 ## Report
 ### Introduction
-The goal is to forecast g/Int$ pesticide use across seven regions using ARIMA, achieving an RMSE of **X**.
+The goal is to forecast g/Int$ pesticide use across seven regions using ARIMA, achieving an averge RMSE of 0.072 across seven regions. 
 
 ### Methodology Summary
 - ADF test confirmed stationarity. Differencing was applied for non-stationary series, with `p` and `q` selected based on ACF/PACF plots. The model was evaluated on test data.
 
 ### Results
-The model captured key trends and seasonal patterns, achieving an RMSE of **X**.
+The model captured key trends and seasonal patterns, achieving an RMSE of 0.072.
 
 ### Conclusion
 ARIMA provides a reliable forecasting method, with potential for improvement through advanced models like SARIMA.
