@@ -27,7 +27,7 @@ This project uses the ARIMA model for time series forecasting, aiming to predict
 ## Methodology
 1. **Preprocessing**: Filtered data to g/Int$ values for seven regions (Africa, Asia, Central America, Europe, Northern America, Oceania, South America).
 2. **ARIMA Model**:
-   - Performed ADF test (alpha = 0.1).
+   - Performed ADF test to check stationarity of the times series (alpha = 0.1).
    - Differenced non-stationary time series.
    - Selected `p`, `d`, `q` parameters using ACF/PACF plots.
    - Forecasted future data points.
